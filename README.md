@@ -7,7 +7,7 @@ Ce projet est basé sur la programmation en language C de microcontrôleur Micro
 Ce montage commande une Electrovalve servant à activer le spray sur un fauteuil dentaire.
 Deux micro-switch BP et PEDAL sont relus par le microcontrôleur et détectent respectivement une demande de mise en service du Spray, et un appui sur la pédale de mise en route des instruments.
 
-![Alt text](/Schéma BT.jpg)
+![Alt text](/Schema_BT.jpg)
 
 Il existe 4 modes de fonctionnement:
 •	Mode 0 : Normal avec interlocking : Une impulsion sur BP sans PEDAL  active/désactive SPRAY
