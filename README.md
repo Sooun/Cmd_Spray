@@ -10,19 +10,19 @@ Deux micro-switch BP et PEDAL sont relus par le microcontrôleur et détectent r
 ![Alt text](/Schema_BT.jpg)
 
 Il existe 4 modes de fonctionnement:
-	Mode 0 : Normal avec interlocking : Une impulsion sur BP sans PEDAL  active/désactive SPRAY
-	Mode 1 : Normal sans interlocking : Une impulsion sur BP quel que soit l’état de PEDAL  active/désactive SPRAY
-	Mode 2 : Old fashion way  i.e. SPRAY actif tant que BP appuyé
-	Mode 3 : Backup - SPRAY toujours actif
+ * Mode 0 : Normal avec interlocking : Une impulsion sur BP sans PEDAL  active/désactive SPRAY
+ * Mode 1 : Normal sans interlocking : Une impulsion sur BP quel que soit l’état de PEDAL  active/désactive SPRAY
+ * Mode 2 : Old fashion way  i.e. SPRAY actif tant que BP appuyé
+ * Mode 3 : Backup - SPRAY toujours actif
 
 Dans tous les cas, il faut au moins avoir PEDAL pour avoir EV d’où : EV = PEDAL.
 Le mode de fonctionnement est défini en fonction des relectures sur CONFIG_1 et CONFIG_2.
 
 Pour la partie Hardware, on a un schéma à 2 étages :
-	1er étage : relais miniature qui bascule en fonction de l’état de BP :
-		- 1 contact qui commande le 2eme étage. 
-		- 1 contact sec utilisé pour l’affichage led au module central
-	2ème  étage : transistor qui commande l’Electrovalve + LED de signalisation en fonction de l’état de EV.
+ * 1er étage : relais miniature qui bascule en fonction de l’état de BP :
+      - 1 contact qui commande le 2eme étage. 
+      - 1 contact sec utilisé pour l’affichage led au module central
+ * 2ème  étage : transistor qui commande l’Electrovalve + LED de signalisation en fonction de l’état de EV.
 
 De plus, une LED de signal de vie se contente de clignoter lorsque le montage est sous tension.
 
